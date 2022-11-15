@@ -27,7 +27,7 @@ jobs:
         with:
           path_context: '.'
           # Builder image for a java project
-          builder_image: 'registry.access.redhat.com/openjdk/openjdk-11-rhel7'
+          builder_image: 'registry.access.redhat.com/ubi8/openjdk-17:latest'
           image: ${{ env.IMAGE_NAME }}
           tags: ${{ env.TAGS }}
 
